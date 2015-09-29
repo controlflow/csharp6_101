@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1C18E299-E946-4114-AA45-A8B32CFA7034}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CSharp6Samples</RootNamespace>
+    <AssemblyName>CSharp6ReSharperSupportSamples</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AutoProperties\1. What is it.cs" />
+    <Compile Include="AutoProperties\2. Analyzers.cs" />
+    <Compile Include="AutoProperties\3. Actions.cs" />
+    <Compile Include="ConditionalAccess\1. What is it.cs" />
+    <Compile Include="ConditionalAccess\2. Analyzers.cs" />
+    <Compile Include="ConditionalAccess\3. Actions.cs" />
+    <Compile Include="ConditionalAccess\4. Refactorings.cs" />
+    <Compile Include="ExpressionBodies\1. Whati is it.cs" />
+    <Compile Include="ExpressionBodies\2. Analyzers.cs" />
+    <Compile Include="ExpressionBodies\3. Actions.cs" />
+    <Compile Include="ExpressionBodies\4. Refactorings.cs" />
+    <Compile Include="Misc\1. ExceptionFilters.cs" />
+    <Compile Include="Misc\2. CollectionInitializers.cs" />
+    <Compile Include="Misc\3. DictionaryInitializers.cs" />
+    <Compile Include="Misc\4. ParameterlessCtor.cs" />
+    <Compile Include="NameofExpression\1. What is it.cs" />
+    <Compile Include="NameofExpression\2. Analytics.cs" />
+    <Compile Include="Properties\Annotations.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StringInterpolation\1. What is it.cs" />
+    <Compile Include="StringInterpolation\2. Analyzers.cs" />
+    <Compile Include="StringInterpolation\3. Actions.cs" />
+    <Compile Include="UsingStatic\1. What is it.cs" />
+    <Compile Include="UsingStatic\2. Support.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
